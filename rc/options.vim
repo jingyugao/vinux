@@ -59,7 +59,8 @@ set report=0  "Threshold for reporting number of lines changed
 set lazyredraw  " Don't update the display while executing macros
 set helplang=en,cn  "set helplang=en
 set autoread   "autoread when a file is changed from the outside
-set relativenumber number "show the line number for each line
+"set relativenumber number "show the line number for each line
+set nu
 set cmdheight=1  "number of lines used for the command-line
 set showmatch "when inserting a bracket, briefly jump to its match
 set printfont=Yahei_Mono:h10:cGB2312  "name of the font to be used for :hardcopy
