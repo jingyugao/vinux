@@ -19,7 +19,7 @@ endfunction
 "Add you extra favorite plugin here
 function! TVIM_plug_init()
 "Plug 'someone/something'
-Plug 'fatih/vim-go'
+"Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'Valloric/YouCompleteMe'
 Plug 'mdempsky/gocode', {'rtp': 'vim/'}
 "Plug 'scrooloose/nerdcommenter'
