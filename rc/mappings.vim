@@ -5,7 +5,8 @@ set timeout timeoutlen=1000 ttimeoutlen=100
 call te#meta#init()
 
 "leader key
-let g:mapleader="\<Space>"
+"let g:mapleader="\<Space>"
+let g:mapleader=','
 let g:maplocalleader=','
 
 "map jj to esc..

@@ -10,7 +10,6 @@ love.ini
 sessions/
 .github_token
 feature.vim
-local.vim
 .vim-bookmarks
 .netrwhist
 org/
@@ -23,3 +22,4 @@ autoload/plug.vim
 *.swn
 *.swo
 bin/trans
+ycm_build
