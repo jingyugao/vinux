@@ -7,7 +7,7 @@ app_name='vinux'
 dot_localvim="$HOME/.vim/local.vim"
 dot_vimrc="$HOME/.vimrc"
 [ -z "$APP_PATH" ] && APP_PATH="$HOME/.vim"
-[ -z "$REPO_URI" ] && REPO_URI='https://github.com/tracyone/vinux.git'
+[ -z "$REPO_URI" ] && REPO_URI='https://github.com/jingyugao/vinux.git'
 [ -z "$REPO_BRANCH" ] && REPO_BRANCH='master'
 debug_mode='0'
 [ -z "$VIM_PLUG_PATH" ] && VIM_PLUG_PATH="$HOME/.vim/autoload"
@@ -190,8 +190,7 @@ endfunction
 
 "Add you extra config here
 function! TVIM_user_init()
-"set nonu
-"set nornu
+"set nonu "set nornu
 "colorscheme jellybeans
 "set guifont=
 "set guifontwide=
