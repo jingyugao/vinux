@@ -20,10 +20,10 @@ cnoremap j<Space>     j
 vnoremap [p "0p
 
 "visual mode hit tab forward indent ,hit shift-tab backward indent
-vnoremap <TAB>  >gv  
-vnoremap <s-TAB>  <gv 
+"vnoremap <TAB>  >gv  
+"vnoremap <s-TAB>  <gv 
 "Ctrl-tab is not work in vim
-nnoremap <silent><c-TAB> :AT<cr>
+"nnoremap <silent><c-TAB> :AT<cr>
 
 vnoremap < <gv
 vnoremap > >gv
@@ -162,11 +162,10 @@ nnoremap dm :%s/\r\(\n\)/\1/g<CR>
 
 "cd to current buffer's path
 nnoremap <silent> <leader>fc :call te#utils#goto_cur_file(2)<cr> 
-nnoremap <silent> <c-F7> :call te#utils#goto_cur_file(2)<cr> 
-
-nnoremap <F7> :call te#utils#OptionToggle('ff',['dos', 'unix'])<cr>
+"nnoremap <silent> <C-F7> :call te#utils#goto_cur_file(2)<cr> 
+"nnoremap <F7> :call te#utils#OptionToggle('ff',['dos', 'unix'])<cr>
 " dos to unix or unix to dos
-nnoremap <Leader>td :call te#utils#OptionToggle('ff',['dos', 'unix'])<cr>
+"nnoremap <Leader>td :call te#utils#OptionToggle('ff',['dos', 'unix'])<cr>
 " open url on cursor with default browser
 nnoremap <leader>ol :call te#utils#open_url("")<cr>
 " linu number toggle
@@ -196,38 +195,38 @@ nnoremap <Leader>hf :tabnew<cr>:h function-list<cr>:only<cr>
 
 "update t_vim
 
-nnoremap <Leader>ud :cd $VIMFILES<cr>:call te#utils#run_command('git fetch --all',function('te#tools#update_vinux'))<cr>
+"nnoremap <Leader>ud :cd $VIMFILES<cr>:call te#utils#run_command('git fetch --all',function('te#tools#update_vinux'))<cr>
     
 
 " quit all
 nnoremap <Leader>qa :call te#utils#quit_win(1)<cr>
 nnoremap <Leader>qq :call te#utils#quit_win(0)<cr>
 " quit current tab
-nnoremap <Leader>qw :tabclose<cr>
+nnoremap <m-w> :tabclose<cr>
 " quit all without save
 nnoremap <Leader>qQ :qa!<cr>
 " save and quit all
 nnoremap <Leader>qs :wqa<cr>
 " switch to last open tab or buffer
-nnoremap <Leader><tab> :call te#utils#tab_buf_switch(-2)<cr>
+"nnoremap <m-Tab> :call te#utils#tab_buf_switch(-2)<cr>
 " tab 1
-nnoremap <leader>1 :call te#utils#tab_buf_switch(1)<cr>
+"nnoremap <leader>1 :call te#utils#tab_buf_switch(1)<cr>
 " tab 2
-nnoremap <leader>2 :call te#utils#tab_buf_switch(2)<cr>
+"nnoremap <leader>2 :call te#utils#tab_buf_switch(2)<cr>
 " tab 3
-nnoremap  <leader>3 :call te#utils#tab_buf_switch(3)<cr>
+"nnoremap  <leader>3 :call te#utils#tab_buf_switch(3)<cr>
 " tab 4
-nnoremap  <leader>4 :call te#utils#tab_buf_switch(4)<cr>
+"nnoremap  <leader>4 :call te#utils#tab_buf_switch(4)<cr>
 " tab 5
-nnoremap  <leader>5 :call te#utils#tab_buf_switch(5)<cr>
+"nnoremap  <leader>5 :call te#utils#tab_buf_switch(5)<cr>
 " tab 6
-nnoremap  <leader>6 :call te#utils#tab_buf_switch(6)<cr>
+"nnoremap  <leader>6 :call te#utils#tab_buf_switch(6)<cr>
 " tab 7
-nnoremap  <leader>7 :call te#utils#tab_buf_switch(7)<cr>
+"nnoremap  <leader>7 :call te#utils#tab_buf_switch(7)<cr>
 " tab 8
-nnoremap  <leader>8 :call te#utils#tab_buf_switch(8)<cr>
+"nnoremap  <leader>8 :call te#utils#tab_buf_switch(8)<cr>
 " tab 9
-nnoremap  <leader>9 :call te#utils#tab_buf_switch(9)<cr>
+"nnoremap  <leader>9 :call te#utils#tab_buf_switch(9)<cr>
 
 "switch previous tab or buftab
 nnoremap <silent> <Left> :call te#utils#tab_buf_switch(0)<cr>

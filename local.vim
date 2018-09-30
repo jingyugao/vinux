@@ -17,6 +17,10 @@ filetype plugin on
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+"Map keys
+nmap <silent> <Leader>sw :FSHere<cr>
+
+
 endfunction
 
 "Add you extra favorite plugin here
@@ -25,6 +29,7 @@ function! TVIM_plug_init()
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'Valloric/YouCompleteMe'
 Plug 'nsf/gocode'
+Plug 'derekwyatt/vim-fswitch'
 "Plug 'scrooloose/nerdcommenter'
 endfunction
 
