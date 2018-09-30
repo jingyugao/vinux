@@ -12,16 +12,19 @@ function! TVIM_user_init()
 " vim-go settings
 let g:go_fmt_command = "goimports"
 "YouCompleteMe
-"let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
 filetype plugin on
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
 endfunction
 
 "Add you extra favorite plugin here
 function! TVIM_plug_init()
 "Plug 'someone/something'
-"Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'Valloric/YouCompleteMe'
-Plug 'mdempsky/gocode'
+Plug 'nsf/gocode'
 "Plug 'scrooloose/nerdcommenter'
 endfunction
 
