@@ -23,7 +23,7 @@ endfunction
 function! TVIM_plug_init()
 "Plug 'someone/something'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
-Plug 'Valloric/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe'
 Plug 'nsf/gocode'
 "Plug 'scrooloose/nerdcommenter'
 endfunction
